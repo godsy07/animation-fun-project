@@ -14,9 +14,21 @@ startButton.addEventListener("click", startAnimation);
 stopButton.addEventListener("click", stopAnimation);
 
 function startAnimation() {
-  console.log("animation started");
+  //   console.log("animation started");
+  box1.style.animation = "shrinkEnlarge 1.4s ease-in infinite alternate";
+  box2.style.animation = "shrinkEnlarge 1.5s ease-in-out infinite alternate";
+  box3.style.animation = "shrinkEnlarge 1.2s ease-out infinite alternate";
+  box4.style.animation = "shrinkEnlarge 1.7s linear infinite alternate";
+  box5.style.animation = "shrinkEnlarge 1.3s linear infinite alternate";
+  box6.style.animation = "shrinkEnlarge 1.1s linear infinite alternate";
 }
 
 function stopAnimation() {
-  console.log("animation stopped");
+  //   console.log("animation stopped");
+  box1.style.animationPlayState = "paused";
+  box2.style.animationPlayState = "paused";
+  box3.style.animationPlayState = "paused";
+  box4.style.animationPlayState = "paused";
+  box5.style.animationPlayState = "paused";
+  box6.style.animationPlayState = "paused";
 }
